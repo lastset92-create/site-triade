@@ -268,3 +268,19 @@ body{background:#fff;color:var(--ink)}
 .segment-related>div>a:hover{background:#e9f4fb;border-color:#0074b0;color:#004f81}
 .segment-related span{color:#006eae}
 @media(max-width:780px){.menu-toggle{color:#173f5b;border-color:#bdd0de;background:#f3f8fc}.nav nav{background:#fff;border-color:#dce7ee;box-shadow:0 12px 25px #12344a13;color:#253e54}.header .brand img,.footer .brand img{filter:none}}
+
+/* Dark header and continuous dark section from partnerships to footer. */
+.header,.contact,.site-footer{--ink:#f2f6fc;--blue:#45aaff;--sky:#8bdcff;--muted:#b0bfd0;--line:#ffffff20;color:var(--ink);color-scheme:dark}
+.header{background:#080c12;border-color:#ffffff16;box-shadow:none}
+.header .brand img,.site-footer .brand img{filter:url(#triade-logo-colors)}
+.header .nav nav{color:#d5dfeb}
+.header .nav nav>a:hover{color:#45aaff}
+.header .portal{background:#11233966;border-color:#4584b85c;color:#e4f0fa}
+.header .portal span{color:#45aaff}
+.contact{background:#070b12}
+.site-footer{background:#070b12;border-color:#ffffff20}
+.site-footer .location-copy .eyebrow{color:#52baed}
+.site-footer .location-copy address{color:#afc0d1}
+.site-footer .footer{border-color:#ffffff20;color:#b0bfd0}
+.site-footer .text-link{color:#e4f0fa}
+@media(max-width:780px){.header .menu-toggle{color:#f2f6fc;border-color:#ffffff40;background:#102036}.header .nav nav{background:#080e18;border-color:#ffffff20;box-shadow:0 16px 30px #0008}}
