@@ -102,3 +102,169 @@
 .client-mark:focus-visible{outline:2px solid #45aaff;outline-offset:8px;border-radius:3px}
 .trust{padding-block:27px 29px}
 @media(max-width:780px){.logos{max-width:490px;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px 18px;margin-top:23px}.client-mark{max-width:128px;height:53px}.client-mark-tall{max-width:98px;height:64px}.trust{padding-block:23px 26px}}
+
+/* Segment navigation sits beside the photographs. */
+.sector-carousel{position:relative}
+.sector-carousel .carousel-controls{position:absolute;top:0;left:-24px;right:-24px;height:425px;z-index:5;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
+.sector-carousel .carousel-controls button{pointer-events:auto;width:48px;height:48px;border-radius:50%;background:#0a1729eF;border:1px solid #5db4ed70;box-shadow:0 4px 18px #0006;color:#e7f6ff}
+.sector-carousel .carousel-controls button:hover{background:#10598b;border-color:#71ccff}
+.sector-carousel .carousel-controls button:disabled{opacity:.3;background:#0a1729;box-shadow:none}
+.sector-carousel .gallery-hint{width:100%}
+.founder-caption .founder-crc{font-size:13px;color:#d2e9fa;letter-spacing:.3px;margin:2px 0 4px}
+
+/* Complete orbits with the real brand at their shared center. */
+.orbit-stage{height:clamp(390px,55vw,650px);mask-image:none;margin:0 auto 20px}
+.triade-orbit-ring{top:50%;bottom:auto;transform:translate(-50%,-50%)}
+.orbit-inner{--diameter:clamp(135px,42vw,280px)}
+.orbit-middle{--diameter:clamp(220px,62vw,420px)}
+.orbit-outer{--diameter:clamp(295px,84vw,560px)}
+.triade-orbit-item{width:64px;margin-left:-32px}
+.triade-orbit-badge{width:64px;height:64px;margin-top:-32px}
+.network-globe{top:50%;bottom:auto;transform:translate(-50%,-50%);width:clamp(130px,24vw,225px);opacity:.3}
+.network-center{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(98px,20vw,173px);pointer-events:none}
+.network-center img{width:100%;height:auto;filter:url(#triade-logo-colors)}
+.network-heading .network-description{max-width:710px;color:#bdcddd}
+.network-services{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.network-service h3{font-size:23px}
+.partner-solutions{margin-top:20px}
+.partner-solution{border-top:1px solid var(--line);scroll-margin-top:125px}
+.partner-solution summary{font:500 14px/1.5 'DM Sans',Arial,sans-serif;padding:15px 0;gap:16px;justify-content:space-between}
+.partner-solution summary span{color:var(--blue);font-size:20px;flex-shrink:0;transition:transform .2s}
+.partner-solution[open] summary{color:#8bdcff}
+.partner-solution[open] summary span{transform:rotate(45deg)}
+.partner-solution p{max-width:none;padding:0 12px 18px 0;font-size:14px;line-height:1.7}
+
+/* Shared location footer. */
+.site-footer{border-top:1px solid var(--line);background:#070c13}
+.footer-location{display:grid;grid-template-columns:.75fr 1.35fr;align-items:center;gap:70px;padding-block:65px}
+.location-copy .eyebrow{color:#52baed;margin:0 0 18px;font-size:10px}
+.location-copy h2{font-size:36px}
+.location-copy address{font-style:normal;color:#afc0d1;font-size:14px;line-height:1.9;margin:23px 0}
+.footer-map{display:block;width:100%;height:330px;border-radius:9px;min-width:0;background:#132234;color-scheme:light}
+.footer{padding-block:25px 100px}
+
+/* Dedicated sector pages, keeping Tríade's dark blue identity. */
+.segment-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;padding-block:64px 80px}
+.segment-back{display:inline-block;color:#9fc0da;font-size:13px;margin-bottom:34px}
+.segment-back:hover{color:#fff}
+.segment-hero-copy .eyebrow{color:#4ebff2;margin:0 0 22px;font-size:10px;letter-spacing:1.3px}
+.segment-hero h1{font-size:clamp(36px,3.6vw,52px);line-height:1.14;letter-spacing:-1.5px;margin:0}
+.segment-hero-copy>p:not(.eyebrow){color:var(--muted);font-size:16px;line-height:1.85;margin:26px 0}
+.segment-hero-image{width:100%;height:530px;object-fit:cover;border-radius:10px}
+.segment-hero-image[src*="medica"]{object-position:52% center}
+.segment-hero-image[src*="salao"]{object-position:45% center}
+.segment-content{padding-block:0 85px;scroll-margin-top:120px}
+.segment-heading{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;margin-bottom:38px}
+.segment-heading h2,.segment-process h2,.segment-faq h2,.segment-contact h2{font-size:clamp(29px,3vw,40px)}
+.segment-heading>p{color:var(--muted);font-size:16px;line-height:1.85;margin:0}
+.segment-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.segment-card-grid article{background:#0e1723;border:1px solid var(--line);border-radius:8px;padding:27px 24px}
+.segment-card-grid .eyebrow{font-size:10px;color:#4bb7ef;margin-bottom:28px}
+.segment-card-grid h3{font-size:20px;line-height:1.3;letter-spacing:-.3px}
+.segment-card-grid p{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:0}
+.segment-process{background:#0b1420;border-block:1px solid var(--line);padding-block:70px}
+.segment-process-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.segment-process .eyebrow{color:#49baf1;font-size:10px;margin-bottom:24px}
+.segment-process-grid>div>p:not(.eyebrow){color:var(--muted);margin-top:0;line-height:1.85}
+.segment-process ol{list-style:none;counter-reset:step;padding:0;margin:26px 0 0}
+.segment-process li{counter-increment:step;display:grid;grid-template-columns:32px 1fr;gap:2px 14px;border-top:1px solid var(--line);padding:17px 0}
+.segment-process li:before{content:'0' counter(step);grid-row:span 2;color:#4dbefa;font-size:12px;padding-top:4px}
+.segment-process li strong{font-size:15px;font-weight:600}
+.segment-process li span{font-size:13px;color:var(--muted)}
+.segment-faq{padding-block:75px}
+.segment-faq .service-list{max-width:920px;margin-top:35px}
+.segment-faq summary{font-size:17px;line-height:1.5}
+.segment-faq .detail-body{padding-left:0;font-size:15px;max-width:820px}
+.segment-contact{padding:45px;background:#0d2946;border:1px solid #2b668b70;border-radius:10px;margin-bottom:70px}
+.segment-contact>p{max-width:620px;color:#bacddd;margin:22px 0 28px}
+.segment-related{padding-bottom:75px}
+.segment-related .eyebrow{font-size:10px;color:#70a6cc;margin-bottom:22px}
+.segment-related>div{display:flex;flex-wrap:wrap;gap:12px}
+.segment-related>div>a{border:1px solid #31537280;border-radius:5px;padding:10px 15px;font-size:13px;color:#c5d8e8;display:flex;gap:18px}
+.segment-related>div>a:hover{border-color:#42baff;color:#fff;background:#102b45}
+.segment-related span{color:#45baff}
+@media(min-width:1600px){.sector-carousel .carousel-controls{height:460px}}
+@media(max-width:1100px){.sector-carousel .carousel-controls{height:390px;left:-20px;right:-20px}.segment-hero,.segment-heading,.segment-process-grid{gap:40px}.segment-hero-image{height:490px}.segment-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-location{gap:40px}}
+@media(max-width:780px){.sector-carousel .carousel-controls{height:405px;left:-12px;right:-12px}.sector-carousel .carousel-controls button{width:38px;height:38px}.network-services{grid-template-columns:1fr}.triade-orbit-item{width:48px;margin-left:-24px}.triade-orbit-badge{width:48px;height:48px;margin-top:-24px}.triade-orbit-badge svg{width:23px;height:23px}.orbit-stage{margin-bottom:24px}.footer-location{grid-template-columns:1fr;gap:32px;padding-block:40px}.location-copy h2{font-size:32px}.footer-map{height:300px}.segment-hero{grid-template-columns:1fr;gap:35px;padding-block:34px 55px}.segment-back{margin-bottom:26px}.segment-hero h1{font-size:38px}.segment-hero-image{height:430px}.segment-heading,.segment-process-grid{grid-template-columns:1fr;gap:26px}.segment-content{padding-bottom:55px}.segment-card-grid{gap:12px}.segment-card-grid article{padding:23px 20px}.segment-process{padding-block:50px}.segment-faq{padding-block:55px}.segment-faq summary{font-size:16px;gap:20px}.segment-contact{padding:28px;margin-bottom:48px}.segment-related{padding-bottom:50px}}
+@media(max-width:420px){.sector-carousel .carousel-controls{height:365px}.segment-hero h1{font-size:34px}.segment-hero-image{height:350px}.segment-card-grid{grid-template-columns:1fr}.network-service h3{font-size:21px}}
+
+/* Return to the original half-orbit composition. */
+.orbit-stage{height:clamp(310px,47vw,595px);margin-bottom:12px;mask-image:none}
+.orbit-stage::after{content:'';position:absolute;z-index:1;inset:auto 0 0;height:26%;background:linear-gradient(transparent,#070b12);pointer-events:none}
+.triade-orbit-ring{top:auto;bottom:0;transform:translate(-50%,50%)}
+.orbit-inner{--diameter:clamp(380px,60vw,720px)}
+.orbit-middle{--diameter:clamp(530px,77vw,940px)}
+.orbit-outer{--diameter:clamp(680px,94vw,1160px)}
+.triade-orbit-item{width:80px;margin-left:-40px}
+.triade-orbit-badge{width:80px;height:80px;margin-top:-40px}
+.network-globe{top:auto;bottom:0;width:clamp(250px,35vw,430px);transform:translate(-50%,50%);opacity:.3}
+.network-center{top:auto;bottom:18px;transform:translateX(-50%);width:clamp(120px,18vw,190px);z-index:2}
+.partner-carousel{min-width:0}
+.partner-carousel-toolbar{display:flex;justify-content:space-between;align-items:center;gap:25px;margin:0 0 22px}
+.partner-carousel-toolbar>p{font-size:13px;color:#9eb1c6;margin:0}
+.partner-carousel-controls{display:flex;gap:10px;flex-shrink:0}
+.partner-carousel-controls button{width:43px;height:43px;border:1px solid #3d6687;border-radius:50%;color:#dff3ff;background:#0b1a2a;font-size:21px;cursor:pointer}
+.partner-carousel-controls button:hover{background:#10598b;border-color:#65c6ff}
+.partner-carousel-controls button:disabled{opacity:.3;cursor:default;background:#0b1a2a}
+.network-services{display:flex;gap:20px;align-items:stretch;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#286590 #101923;padding:5px 2px 24px;cursor:grab;overscroll-behavior-x:contain}
+.network-services.is-dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.network-services .partner-card{flex:0 0 calc((100% - 40px)/3);min-width:0;min-height:335px;display:flex;flex-direction:column;scroll-snap-align:start;scroll-margin-top:125px;scroll-margin-inline:2px}
+.partner-card .network-service-top{margin-bottom:27px}
+.partner-card .network-service-top>svg{width:39px;height:39px}
+.partner-card h3{font-size:22px;line-height:1.25;margin-bottom:16px;letter-spacing:-.4px}
+.partner-card>p{max-width:none;line-height:1.8;margin:0 0 27px}
+.partner-card>.text-link{margin-top:auto;font-size:12px;color:#6dc9f6}
+.partner-card:focus-visible{outline:2px solid #66c7fc;outline-offset:-2px;background:#10283b}
+@media(max-width:1100px){.network-services .partner-card{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:780px){.triade-orbit-item{width:62px;margin-left:-31px}.triade-orbit-badge{width:62px;height:62px;margin-top:-31px}.triade-orbit-badge svg{width:26px;height:26px}.network-center{bottom:12px}.network-services{gap:16px}.network-services .partner-card{flex-basis:82%;min-height:310px}.partner-carousel-toolbar{gap:15px}.partner-carousel-toolbar>p{font-size:12px;max-width:240px}.partner-carousel-controls{gap:7px}.partner-carousel-controls button{width:36px;height:36px;font-size:18px}}
+
+/* White editorial base with deliberate dark sections. */
+:root{color-scheme:light;--ink:#152d44;--blue:#006eae;--sky:#007fc4;--muted:#526579;--line:#173e5d21;--paper:#fff;--soft:#f4f7fa}
+body{background:#fff;color:var(--ink)}
+.header{background:#ffffffed;border-color:#dfe6ee;box-shadow:0 2px 16px #0d274407}
+.header .brand img,.footer .brand img{filter:none}
+.nav nav{color:#253e54}
+.nav nav>a:hover{color:#006eae}
+.portal{background:#f0f6fb;border-color:#b9d3e5;color:#15527b}
+.portal span{color:#006eae}
+.skip{background:#075687;color:white}
+.hero,.trust,.network-orbital,.contact-panel,.segment-contact{--ink:#f2f6fc;--blue:#45aaff;--sky:#8bdcff;--muted:#b0bfd0;--line:#ffffff20;--paper:#080c12;--soft:#0d141f;color:var(--ink);color-scheme:dark}
+.hero h1{color:#f2f6fc}
+.hero .text-link,.hero .explore{color:#e4f0fa}
+.trust{border-color:#1f3348;background:#080c12}
+.solutions{background:white}
+.section-heading .eyebrow{color:#4b6d86}
+.gallery-hint{color:#536d82}
+.gallery-hint>span:last-child{color:#006b9e}
+.about{background:#f4f7fa;border-color:#dfe7ef}
+.about-copy>.eyebrow{color:#006da7}
+.about-copy blockquote{color:#24415a;border-color:#0073aa}
+.about-copy>p:not(.eyebrow){color:#526579}
+.about-copy .values span{color:#24415a;border-color:#b3cbdc}
+.founder-caption,.founder-caption strong{color:white}
+.network-orbital{background:radial-gradient(ellipse at 72% 22%,#09223870,transparent 60%),#070b12}
+.network-heading,.network-service{color:#f2f6fc}
+.contact-panel h2,.segment-contact h2{color:#f2f6fc}
+.site-footer{background:#fff;border-color:#dfe6ee}
+.location-copy .eyebrow{color:#006da7}
+.location-copy address{color:#526579}
+.footer{border-color:#dfe6ee;color:#526579}
+.whatsapp-label{background:white;color:#1d3d56;border-color:#c7d9e7;box-shadow:0 4px 20px #12344a12}
+.segment-back{color:#35627f}
+.segment-back:hover{color:#006eae}
+.segment-hero-copy .eyebrow{color:#006da7}
+.segment-hero h1{color:#152d44}
+.segment-card-grid article{background:#f5f8fb;border-color:#dce7ef}
+.segment-card-grid .eyebrow{color:#006eae}
+.segment-card-grid h3{color:#183c58}
+.segment-process{background:#f2f6fa;border-color:#dce6ef}
+.segment-process .eyebrow,.segment-process li:before{color:#006da7}
+.segment-process li{border-color:#ccdae5}
+.segment-faq .service-list details{border-color:#d6e1eb}
+.segment-faq .detail-body{color:#526579}
+.segment-contact{background:radial-gradient(ellipse at 100% 100%,#0b4266,transparent 70%),#0c2944;border-color:#1f5880}
+.segment-related .eyebrow{color:#4c6d85}
+.segment-related>div>a{background:#f5f9fc;border-color:#cadbe7;color:#27506c}
+.segment-related>div>a:hover{background:#e9f4fb;border-color:#0074b0;color:#004f81}
+.segment-related span{color:#006eae}
+@media(max-width:780px){.menu-toggle{color:#173f5b;border-color:#bdd0de;background:#f3f8fc}.nav nav{background:#fff;border-color:#dce7ee;box-shadow:0 12px 25px #12344a13;color:#253e54}.header .brand img,.footer .brand img{filter:none}}
